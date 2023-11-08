@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chat Grupal</title>
+</head>
+<body>
+    <div id="grupal-chat">
+        <h2><span>Group chat</span> <button id="handle-logout">Logout</button></h2>
+        
+        <div class="chat" id="chat"></div>
+        <div>
+            <h5 id="is-writing"></h5>
+        </div>
+        <form class="form" id="form">
+            <input type="text" placeholder="Escribe tu mensaje..." name="text" id="input-message">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div id="username-container" class="username">
+        
+        <form class="form" id="username-form">
+            <input type="text" placeholder="MyNick" id="username" name="username">
+            <button type="submit">Start</button>
+        </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

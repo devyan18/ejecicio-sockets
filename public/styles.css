@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chat {
+  flex: 1;
+  max-width: 600px;
+  margin: 20px auto 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  /* Para que el chat sea scrollable */
+  overflow: auto;
+  height: 600px;
+  max-height: 600px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+.user {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.bubble {
+  padding: 14px;
+  background-color: #007bff;
+  color: #fff;
+  max-width: 70%;
+  word-wrap: break-word;
+
+  align-self: flex-start;
+  border-radius: 18px;
+  border-top-left-radius: 0;
+}
+
+.my-message{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 10px;
+  /* aliniar a la derecha */
+}
+
+.my-bubble {
+  padding: 14px;
+  background-color: #25d366; /* Color similar a WhatsApp */
+  color: #fff;
+
+  max-width: 70%;
+  word-wrap: break-word;
+
+  align-self: flex-start;
+  border-radius: 18px;
+  border-top-right-radius: 0;
+}
+
+.form {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+
+#grupal-chat > h2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px
+}
+
+.is-writing {
+  text-align: center;
+}
